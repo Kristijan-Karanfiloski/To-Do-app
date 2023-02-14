@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* dark background */
+
+  --Vdarkblue: hsl(235, 21%, 11%);
+  --Verydarkdesaturatedblue: hsl(235, 24%, 19%);
+  --Lightgrayishblue: hsl(234, 39%, 85%);
+  --Lightgrayishblue: hsl(236, 33%, 92%);
+  --Darkgrayishblue: hsl(234, 11%, 52%);
+  --Verydarkgrayishblue: hsl(233, 14%, 35%);
+  --Verydarkgrayishblue: hsl(237, 14%, 26%);
+  --check: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  /* white background */
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: var(--Vdarkblue);
+  font-size: 18px;
+  font-family: "Josefin Sans";
+}
+
+i {
+  cursor: pointer;
+}
+
+.banner-con {
+  width: 100%;
+  height: 50vh;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-desktop-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 15vh;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  background: var(--Verydarkdesaturatedblue);
+  color: var(--Lightgrayishblue);
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  background: var(--Verydarkdesaturatedblue);
+  color: var(--Lightgrayishblue);
+}
+
+.list-group-item-dark {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.btn__delete {
+  border: none;
+  background: var(--Verydarkdesaturatedblue);
+  cursor: pointer;
+}
+
+.active-check {
+  border-radius: 50%;
+  border: none;
+  padding: 0.25rem;
+  background: var(--check);
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.choice {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 3rem 0 3rem;
+  color: var(--Verydarkgrayishblue);
+  border-radius: 2px;
+  margin-top: 1rem;
+  background: var(--Verydarkdesaturatedblue);
+}
+
+.choice p:hover {
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+/* FRO LIGHT DARK THEME SWITCHING */

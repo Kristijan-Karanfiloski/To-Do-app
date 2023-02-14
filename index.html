@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="banner-con">
+      <div class="banner" id="banner">
+        <div class="container">
+          <header class="text-center py-5">
+            <div class="row">
+              <div class="col text-start">
+                <h1 class="ps-4">TODO</h1>
+              </div>
+              <div class="col text-end">
+                <i class="bi bi-moon" id="toggleDark"></i>
+              </div>
+            </div>
+
+            <form class="add px-3 my-3 text-center">
+              <input
+                class="form-control m-auto"
+                type="text"
+                name="add"
+                placeholder="Create a new todo..."
+              />
+            </form>
+          </header>
+
+          <ul class="list-group pt-2">
+            <li class="list-group-item">
+              <div class="check">
+                <img src="./images/icon-check.svg" class="add" />
+              </div>
+              <p>Jog around the par 3x</p>
+
+              <button class="btn__delete">
+                <img src="./images/icon-cross.svg" alt="" class="delete" />
+              </button>
+            </li>
+            <li class="list-group-item">
+              <div class="check">
+                <img src="./images/icon-check.svg" class="add" />
+              </div>
+              <p>Learn JavaScript</p>
+
+              <button class="btn__delete">
+                <img src="./images/icon-cross.svg" alt="" class="delete" />
+              </button>
+            </li>
+          </ul>
+
+          <div class="choice">
+            <p>All</p>
+            <p>Active</p>
+            <p>Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

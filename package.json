@@ -1,0 +1,15 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "ToDoo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristijan Karanfiloski",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
+  }
+}
